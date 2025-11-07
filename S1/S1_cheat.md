@@ -27,7 +27,7 @@
 
 | Metric                | Formula                             | Notes                             |
 | --------------------- | ----------------------------------- | --------------------------------- |
-| **L1 (Manhattan)**    | $\displaystyle \sum_i |x_i - y_i|$                | Robust to outliers                |
+| **L1 (Manhattan)**    | $\displaystyle \sum_i \|x_i - y_i\|$                | Robust to outliers                |
 | **L2 (Euclidean)**    | $\displaystyle \sqrt{\sum_i (x_i - y_i)^2}$       | Sensitive to large values         |
 | **Cosine similarity** | $\displaystyle \frac{\mathbf{x}\cdot\mathbf{y}}{\|\mathbf{x}\|\|\mathbf{y}\|}$              | Angle-based; ignores magnitude    |
 | **Mahalanobis**       | $\displaystyle \sqrt{(\mathbf{x}-\mathbf{y})^\top \Sigma^{-1} (\mathbf{x}-\mathbf{y})}$       | Accounts for feature correlations |
